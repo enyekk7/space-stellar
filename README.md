@@ -17,6 +17,8 @@
 
 ---
 
+https://youtu.be/auC2VgekLhI?si=E9sW-NqZyDuW604C
+
 ## 📖 What is Space Stellar?
 
 **Space Stellar** is a decentralized web3 game built on the Stellar blockchain, combining NFT collectibles with real-time space shooter gameplay. This project uses [Scaffold Stellar Registry](https://scaffoldstellar.org/docs/registry) to easily manage and deploy smart contracts.
