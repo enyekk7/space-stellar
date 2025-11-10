@@ -1,0 +1,71 @@
+═══════════════════════════════════════════════════════════════
+  📍 LOKASI FOLDER UNTUK GAMBAR KARAKTER MUSUH (ENEMY ASSETS)
+═══════════════════════════════════════════════════════════════
+
+📍 PATH LENGKAP:
+   C:\Users\Administrator\Pictures\space\frontend\public\game-assets\enemies\
+
+📁 FOLDER RELATIF:
+   frontend/public/game-assets/enemies/
+
+═══════════════════════════════════════════════════════════════
+  🎮 FILE GAMBAR YANG PERLU DITAMBAHKAN:
+═══════════════════════════════════════════════════════════════
+
+1. enemy1.png
+   → Musuh biasa, hanya lewat, player tidak boleh kena
+
+2. enemy2.png
+   → Musuh biasa, hanya lewat, player tidak boleh kena
+
+3. enemylevel1.png
+   → Musuh dengan gerak zigzag tidak beraturan (lebih cepat)
+
+4. enemylevel2.png
+   → Musuh cepat yang bisa mengandakan diri (max 2 bayangan)
+
+5. boss1.png
+   → Boss yang bisa menembak dengan efek tinta gurita (hitam)
+
+6. boss2.png
+   → Boss yang bisa menembak dengan efek ungu-ungu
+
+═══════════════════════════════════════════════════════════════
+  📐 SPESIFIKASI GAMBAR:
+═══════════════════════════════════════════════════════════════
+
+✓ Format: PNG dengan transparansi (background transparent)
+✓ Ukuran: 40x40 sampai 80x80 pixels (recommended)
+✓ Background: Transparent (agar terlihat bagus di game)
+✓ Nama file: HARUS EXACT MATCH (case sensitive)
+
+═══════════════════════════════════════════════════════════════
+  ✅ CARA MENGGUNAKAN:
+═══════════════════════════════════════════════════════════════
+
+1. Download atau buat gambar musuh sesuai nama di atas
+2. Simpan semua file ke folder: frontend/public/game-assets/enemies/
+3. Pastikan nama file EXACT MATCH:
+   - enemy1.png (bukan Enemy1.png atau ENEMY1.PNG)
+   - enemy2.png
+   - enemylevel1.png
+   - enemylevel2.png
+   - boss1.png
+   - boss2.png
+4. Refresh browser untuk melihat perubahan
+
+═══════════════════════════════════════════════════════════════
+  ⚠️ CATATAN PENTING:
+═══════════════════════════════════════════════════════════════
+
+• Jika file gambar tidak ada, game akan menggunakan fallback
+  (kotak berwarna merah/oranye/ungu)
+• Pastikan gambar memiliki background transparent
+• Ukuran gambar akan otomatis di-scale oleh game engine
+• Setelah menambahkan file, refresh browser untuk melihat
+  perubahan
+
+═══════════════════════════════════════════════════════════════
+
+
+

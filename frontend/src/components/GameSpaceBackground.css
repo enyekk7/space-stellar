@@ -1,0 +1,61 @@
+/* Game Space Background - Animated Stars and Shooting Stars untuk Game */
+.game-space-background-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.game-space-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Nebula effect untuk game (sangat subtle, hampir tidak terlihat) */
+.game-space-background-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(
+      ellipse at 25% 35%,
+      rgba(50, 75, 100, 0.02) 0%,
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse at 75% 65%,
+      rgba(75, 100, 125, 0.02) 0%,
+      transparent 45%
+    );
+  pointer-events: none;
+  z-index: 1;
+  mix-blend-mode: screen;
+  animation: nebulaPulse 30s ease-in-out infinite;
+}
+
+@keyframes nebulaPulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+/* Ensure canvas is behind nebula effect */
+.game-space-background {
+  z-index: 0;
+}
+

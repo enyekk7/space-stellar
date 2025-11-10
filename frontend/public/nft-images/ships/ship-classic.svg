@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Classic Ship - Default, Non-NFT -->
+  <defs>
+    <linearGradient id="classicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#888888;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#555555;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Ship Body -->
+  <rect x="60" y="80" width="80" height="40" rx="5" fill="url(#classicGrad)"/>
+  
+  <!-- Ship Cockpit -->
+  <circle cx="100" cy="100" r="15" fill="#333333"/>
+  <circle cx="100" cy="100" r="8" fill="#00ff41"/>
+  
+  <!-- Wings -->
+  <polygon points="60,80 40,100 60,100" fill="#666666"/>
+  <polygon points="140,80 160,100 140,100" fill="#666666"/>
+  
+  <!-- Engine -->
+  <rect x="70" y="120" width="20" height="15" fill="#ff0000" opacity="0.8"/>
+  <rect x="110" y="120" width="20" height="15" fill="#ff0000" opacity="0.8"/>
+  
+  <!-- Text -->
+  <text x="100" y="170" font-family="Arial" font-size="14" fill="#00ff41" text-anchor="middle" font-weight="bold">CLASSIC</text>
+</svg>
+

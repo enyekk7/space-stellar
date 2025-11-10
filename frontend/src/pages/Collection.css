@@ -1,0 +1,204 @@
+.collection {
+  padding: 40px 20px;
+}
+
+.page-title {
+  font-size: 32px;
+  color: var(--accent-green);
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px var(--accent-green);
+}
+
+.page-subtitle {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.collection-empty {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.collection-empty h2 {
+  font-size: 24px;
+  color: var(--accent-green);
+  margin-bottom: 20px;
+}
+
+.collection-empty p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.empty-hint {
+  font-size: 10px;
+  color: var(--accent-green);
+  margin-top: 20px;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.ships-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.ship-card {
+  text-align: center;
+  padding: 30px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ship-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px var(--glow-green);
+}
+
+.ship-card.selected {
+  border-color: var(--accent-green-light);
+  box-shadow: 0 0 30px var(--glow-green);
+}
+
+.ship-image {
+  font-size: 80px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px var(--accent-green));
+}
+
+.ship-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ship-name {
+  font-size: 14px;
+  color: var(--accent-green);
+  margin-bottom: 5px;
+}
+
+.ship-rarity {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ship-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  border-top: 1px solid var(--accent-green);
+  border-bottom: 1px solid var(--accent-green);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 9px;
+}
+
+.stat span:first-child {
+  font-size: 16px;
+}
+
+.stat span:last-child {
+  color: var(--accent-green);
+  font-size: 12px;
+}
+
+.ship-token-id {
+  font-size: 8px;
+  color: var(--text-secondary);
+  padding: 5px;
+  background: var(--bg-primary);
+  border: 1px solid var(--accent-green);
+}
+
+.ship-detail-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.modal-content {
+  max-width: 500px;
+  width: 100%;
+  padding: 40px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: 2px solid var(--accent-green);
+  color: var(--accent-green);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background: var(--accent-green);
+  color: var(--bg-primary);
+}
+
+.modal-content h2 {
+  font-size: 20px;
+  color: var(--accent-green);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.detail-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.detail-stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid var(--accent-green);
+  font-size: 10px;
+}
+
+.detail-stat span:first-child {
+  color: var(--text-secondary);
+}
+
+.detail-stat span:last-child {
+  color: var(--accent-green);
+}
+
+@media (max-width: 768px) {
+  .ships-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+

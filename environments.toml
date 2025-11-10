@@ -1,0 +1,85 @@
+# Scaffold Stellar Environment Configuration
+# Dokumentasi: https://scaffoldstellar.org/docs/environments
+
+# =============================================================================
+# DEVELOPMENT ENVIRONMENT (Local Network)
+# =============================================================================
+[development.network]
+rpc-url = "http://localhost:8000/rpc"
+network-passphrase = "Standalone Network ; February 2017"
+run-locally = false
+
+# Accounts yang akan dibuat otomatis di local network
+[[development.accounts]]
+name = "me"
+default = true
+
+[[development.accounts]]
+name = "admin"
+
+[[development.accounts]]
+name = "user1"
+
+[[development.accounts]]
+name = "user2"
+
+# Konfigurasi contract Space Stellar NFT
+[development.contracts.space_stellar_nft]
+client = true  # Generate TypeScript client otomatis di packages/
+
+# Constructor args - dipanggil saat deploy
+constructor_args = """
+    STELLAR_ACCOUNT=admin --owner $(stellar keys address admin)
+"""
+
+# After deploy script - setup awal contract
+after_deploy = """
+    # Test minting setelah deploy untuk verify contract bekerja
+    STELLAR_ACCOUNT=admin mint \
+        --to $(stellar keys address user1) \
+        --class Fighter \
+        --rarity Common \
+        --tier Elite \
+        --attack 10 \
+        --speed 8 \
+        --shield 12 \
+        --ipfs_cid QmTest123456789abcdefghijklmnopqrstuvwxyz1234 \
+        --metadata_uri ipfs://QmTest123456789abcdefghijklmnopqrstuvwxyz1234
+"""
+
+# =============================================================================
+# TESTNET ENVIRONMENT
+# =============================================================================
+[testnet.network]
+rpc-url = "https://soroban-testnet.stellar.org"
+network-passphrase = "Test SDF Network ; September 2015"
+
+[[testnet.accounts]]
+name = "me"
+default = true
+
+[testnet.contracts.space_stellar_nft]
+client = true
+id = "CC7MQ3BSNULZ4YX62OMZOZ2RYTZEMUJEWITQJH7YBVXJL75QIZMS2PTX"
+
+# =============================================================================
+# PRODUCTION ENVIRONMENT (Mainnet)
+# =============================================================================
+[production.network]
+rpc-url = "https://rpc.mainnet.stellar.org:443"
+network-passphrase = "Public Global Stellar Network ; September 2015"
+
+[[production.accounts]]
+name = "me"
+default = true
+
+[production.contracts.space_stellar_nft]
+client = true
+# Contract ID MUST be set untuk production
+# Set setelah deploy ke mainnet:
+# id = "CC..."
+
+
+
+
+

@@ -1,0 +1,193 @@
+# ============================================
+# Dependencies
+# ============================================
+node_modules/
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# ============================================
+# Build outputs
+# ============================================
+dist/
+build/
+target/
+*.wasm
+*.wasm.map
+contracts/.soroban/
+.soroban/
+
+# ============================================
+# Environment variables (SENSITIVE - DO NOT COMMIT)
+# ============================================
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+*.env
+.envrc
+
+# ============================================
+# Logs
+# ============================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+logs/
+*.log.*
+
+# ============================================
+# OS files
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ============================================
+# IDE & Editor files
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# ============================================
+# Sensitive files (API keys, secrets, private keys)
+# ============================================
+backend/PINATA_KEYS.txt
+*_KEYS.txt
+*_SECRET*.txt
+*_PRIVATE*.txt
+*_API*.txt
+*secret*
+*private*
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+
+# ============================================
+# Deployment configuration (may contain secrets)
+# ============================================
+railway.json
+vercel.json
+.netlify/
+.vercel/
+.railway/
+
+# ============================================
+# Test files with sensitive data
+# ============================================
+backend/scripts/test-*.js
+backend/scripts/debug-*.js
+backend/scripts/create-test-account.js
+backend/scripts/check-account-reserves.js
+backend/scripts/fund-account-friendbot.js
+
+# ============================================
+# User-generated content & uploads
+# ============================================
+assets/uploads/
+backend/uploads/
+frontend/public/uploads/
+uploads/
+*.upload
+
+# ============================================
+# Temporary files
+# ============================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+.cache/
+.temp/
+tmp/
+temp/
+
+# ============================================
+# Coverage & Testing
+# ============================================
+coverage/
+.nyc_output/
+*.lcov
+.coverage/
+htmlcov/
+.pytest_cache/
+.tox/
+
+# ============================================
+# Rust/Cargo
+# ============================================
+target/
+Cargo.lock
+**/*.rs.bk
+
+# ============================================
+# TypeScript
+# ============================================
+*.tsbuildinfo
+.tsbuildinfo
+
+# ============================================
+# Package manager locks (optional - uncomment if needed)
+# ============================================
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ============================================
+# Debug & Development files
+# ============================================
+.vscode-test/
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================
+# Database files
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# ============================================
+# Misc
+# ============================================
+*.local
+.cache
+.parcel-cache
+.next
+.nuxt
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.vscode-test/

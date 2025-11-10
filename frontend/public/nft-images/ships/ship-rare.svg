@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Rare Ship - Tier 2 NFT -->
+  <defs>
+    <linearGradient id="rareGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8800ff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="rareGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Ship Body -->
+  <rect x="45" y="65" width="110" height="55" rx="10" fill="url(#rareGrad)"/>
+  
+  <!-- Ship Cockpit -->
+  <circle cx="100" cy="92" r="20" fill="#220033"/>
+  <circle cx="100" cy="92" r="12" fill="#ff00ff" filter="url(#rareGlow)"/>
+  
+  <!-- Wings -->
+  <polygon points="45,65 20,92 45,92" fill="#6600cc"/>
+  <polygon points="155,65 180,92 155,92" fill="#6600cc"/>
+  
+  <!-- Engine -->
+  <rect x="55" y="120" width="30" height="22" fill="#ff00ff" opacity="0.9" filter="url(#rareGlow)"/>
+  <rect x="115" y="120" width="30" height="22" fill="#ff00ff" opacity="0.9" filter="url(#rareGlow)"/>
+  
+  <!-- Details -->
+  <rect x="65" y="70" width="70" height="6" fill="#ff00ff" opacity="0.8"/>
+  <circle cx="80" cy="85" r="3" fill="#ff00ff" filter="url(#rareGlow)"/>
+  <circle cx="120" cy="85" r="3" fill="#ff00ff" filter="url(#rareGlow)"/>
+  
+  <!-- Text -->
+  <text x="100" y="170" font-family="Arial" font-size="16" fill="#ff00ff" text-anchor="middle" font-weight="bold" filter="url(#rareGlow)">RARE</text>
+</svg>
+

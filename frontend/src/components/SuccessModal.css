@@ -1,0 +1,348 @@
+/* Success Modal - Web3 Wallet Style */
+.success-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.success-modal-container {
+  background: linear-gradient(135deg, #0a0a0a 0%, #0f1419 100%);
+  border: 2px solid var(--accent-green);
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 
+    0 0 30px rgba(0, 255, 65, 0.3),
+    0 20px 60px rgba(0, 0, 0, 0.8);
+  animation: slideUp 0.3s ease;
+  position: relative;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.success-modal-header {
+  padding: 30px 30px 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 255, 65, 0.2);
+  position: relative;
+}
+
+.success-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-secondary);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.success-modal-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent-green);
+  color: var(--accent-green);
+  transform: rotate(90deg);
+}
+
+.success-icon {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.success-checkmark {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 255, 65, 0.1);
+  animation: scaleIn 0.5s ease;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.success-checkmark svg {
+  width: 52px;
+  height: 52px;
+}
+
+.checkmark-circle {
+  stroke: var(--accent-green);
+  stroke-width: 3;
+  stroke-linecap: round;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark-check {
+  transform-origin: 50% 50%;
+  stroke: var(--accent-green);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.6s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.success-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  color: var(--accent-green);
+  text-shadow: 0 0 10px var(--glow-green);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.success-modal-content {
+  padding: 30px;
+}
+
+.success-ship-info {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(0, 255, 65, 0.05);
+  border: 1px solid rgba(0, 255, 65, 0.2);
+  border-radius: 8px;
+}
+
+.success-ship-name {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  color: var(--text-primary);
+  margin: 0 0 15px 0;
+  text-shadow: 0 0 5px var(--accent-green);
+}
+
+.success-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgba(0, 255, 65, 0.1);
+  border: 1px solid var(--accent-green);
+  border-radius: 4px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  color: var(--accent-green);
+  text-shadow: 0 0 5px var(--glow-green);
+}
+
+.success-details {
+  margin-bottom: 30px;
+}
+
+.success-detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.success-detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 9px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.detail-value {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  color: var(--text-primary);
+}
+
+.detail-value-hash {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hash-text {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 9px;
+  color: var(--accent-green);
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
+}
+
+.copy-button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-secondary);
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+  background: rgba(0, 255, 65, 0.1);
+  border-color: var(--accent-green);
+  color: var(--accent-green);
+}
+
+.points-deducted {
+  color: #ff6666;
+  text-shadow: 0 0 5px rgba(255, 102, 102, 0.5);
+}
+
+.success-actions {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.success-btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  padding: 15px 24px;
+  border: 2px solid;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.success-btn-primary {
+  background: var(--accent-green);
+  border-color: var(--accent-green);
+  color: var(--bg-primary);
+  box-shadow: 0 0 20px var(--glow-green);
+}
+
+.success-btn-primary:hover {
+  background: var(--accent-green-light);
+  border-color: var(--accent-green-light);
+  box-shadow: 0 0 30px var(--glow-green);
+  transform: translateY(-2px);
+}
+
+.success-btn-secondary {
+  background: transparent;
+  border-color: var(--text-secondary);
+  color: var(--text-secondary);
+}
+
+.success-btn-secondary:hover {
+  border-color: var(--accent-green);
+  color: var(--accent-green);
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+}
+
+.success-btn:active {
+  transform: translateY(0);
+}
+
+/* Scrollbar styling for modal */
+.success-modal-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.success-modal-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.success-modal-container::-webkit-scrollbar-thumb {
+  background: var(--accent-green);
+  border-radius: 4px;
+}
+
+.success-modal-container::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-green-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .success-modal-container {
+    width: 95%;
+    max-height: 95vh;
+  }
+
+  .success-modal-header {
+    padding: 20px 20px 15px;
+  }
+
+  .success-modal-content {
+    padding: 20px;
+  }
+
+  .success-title {
+    font-size: 12px;
+  }
+
+  .success-ship-name {
+    font-size: 12px;
+  }
+
+  .success-btn {
+    font-size: 9px;
+    padding: 12px 20px;
+  }
+}
+
+
+
