@@ -80,6 +80,7 @@ This project uses the **Scaffold Stellar Registry System** for smart contract de
   - IPFS-based metadata storage
   - On-chain attribute storage (class, rarity, tier, stats)
   - Sequential token ID assignment
+  - **NFT Ship Contract (Testnet)**: `CC7MQ3BSNULZ4YX62OMZOZ2RYTZEMUJEWITQJH7YBVXJL75QIZMS2PTX`
 
 - **Collection Management**
   - View owned NFTs in the collection page
@@ -308,7 +309,7 @@ This project uses **2 smart contracts** deployed using **Scaffold Stellar Regist
 
 - **Name**: Space Stellar Ships
 - **Symbol**: SSHIP
-- **Standard**: OpenZeppelin NonFungibleToken (ERC-721 compatible)
+- **Standard**: OpenZeppelin NonFungibleToken
 - **Features**: Ownable, Sequential Minting, Custom Metadata
 - **Deployment**: Uses Scaffold Stellar Registry
 
