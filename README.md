@@ -436,11 +436,6 @@ This project uses [Scaffold Stellar Registry](https://scaffoldstellar.org/docs/r
 
 ### Registry Contract Addresses
 
-The registry contract is deployed on each network:
-
-- **Testnet**: `CBCOGWBDGBFWR5LQFKRQUPFIG6OLOON35PBKUPB6C542DFZI3OMBOGHX`
-- **Mainnet**: `CC3SILHAJ5O75KMSJ5J6I5HV753OTPWEVMZUYHS4QEM2ZTISQRAOMMF4`
-- **Futurenet**: `CACPZCQSLEGF6QOSBF42X6LOUQXQB2EJRDKNKQO6US6ZZH5FD6EB325M`
 
 ### Deployment Workflow
 
