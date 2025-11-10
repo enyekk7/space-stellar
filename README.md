@@ -17,37 +17,37 @@
 
 ---
 
-## 📖 Apa Itu Space Stellar?
+## 📖 What is Space Stellar?
 
-**Space Stellar** adalah game web3 terdesentralisasi yang dibangun di atas blockchain Stellar, menggabungkan koleksi NFT dengan gameplay space shooter real-time. Project ini menggunakan [Scaffold Stellar Registry](https://scaffoldstellar.org/docs/registry) untuk mengelola dan mendeploy smart contracts dengan mudah.
+**Space Stellar** is a decentralized web3 game built on the Stellar blockchain, combining NFT collectibles with real-time space shooter gameplay. This project uses [Scaffold Stellar Registry](https://scaffoldstellar.org/docs/registry) to easily manage and deploy smart contracts.
 
-### 🎯 Konsep Project
+### 🎯 Project Concept
 
-Space Stellar adalah **Play-to-Earn NFT Game** di mana:
+Space Stellar is a **Play-to-Earn NFT Game** where:
 
-1. **Pemain mengumpulkan NFT Ships** - Setiap ship adalah NFT unik dengan atribut berbeda (Attack, Speed, Shield)
-2. **Bermain game space shooter** - Gunakan NFT ships untuk bermain game real-time
-3. **Kompetisi global** - Naikkan ranking di leaderboard dan dapatkan rewards
-4. **Multiplayer support** - Bermain solo atau versus dengan pemain lain
+1. **Players Collect NFT Ships** - Each ship is a unique NFT with different attributes (Attack, Speed, Shield)
+2. **Play Space Shooter Game** - Use NFT ships to play real-time games
+3. **Global Competition** - Climb the leaderboard rankings and earn rewards
+4. **Multiplayer Support** - Play solo or versus with other players
 
-### 🏗️ Arsitektur Teknologi
+### 🏗️ Technology Architecture
 
-Project ini menggunakan **Scaffold Stellar Registry System** untuk deployment smart contracts:
+This project uses the **Scaffold Stellar Registry System** for smart contract deployment:
 
-- **Registry Contract**: Kontrak on-chain untuk publish, deploy, dan manage smart contracts
-- **Registry CLI**: Tool untuk berinteraksi dengan registry (`stellar registry` commands)
-- **OpenZeppelin Standards**: Menggunakan OpenZeppelin Stellar Contracts untuk standar NFT
-- **Soroban Smart Contracts**: Smart contracts ditulis dalam Rust menggunakan Soroban SDK
+- **Registry Contract**: On-chain contract for publishing, deploying, and managing smart contracts
+- **Registry CLI**: Tool for interacting with the registry (`stellar registry` commands)
+- **OpenZeppelin Standards**: Uses OpenZeppelin Stellar Contracts for NFT standards
+- **Soroban Smart Contracts**: Smart contracts written in Rust using Soroban SDK
 
-### 🔑 Mengapa Menggunakan Scaffold Stellar Registry?
+### 🔑 Why Use Scaffold Stellar Registry?
 
-1. **Simplified Deployment**: Tidak perlu manage contract IDs secara manual
-2. **Version Management**: Registry menyimpan semua versi contract yang dipublish
-3. **Easy Updates**: Update contract dengan mudah tanpa kehilangan data
-4. **Alias System**: Gunakan nama alias untuk memudahkan development
-5. **On-chain Registry**: Semua contract terdaftar di blockchain untuk transparansi
+1. **Simplified Deployment**: No need to manage contract IDs manually
+2. **Version Management**: Registry stores all published contract versions
+3. **Easy Updates**: Update contracts easily without losing data
+4. **Alias System**: Use alias names to simplify development
+5. **On-chain Registry**: All contracts are registered on the blockchain for transparency
 
-**Dokumentasi Lengkap**: [Scaffold Stellar Registry Guide](https://scaffoldstellar.org/docs/registry)
+**Full Documentation**: [Scaffold Stellar Registry Guide](https://scaffoldstellar.org/docs/registry)
 
 ---
 
@@ -57,35 +57,35 @@ Project ini menggunakan **Scaffold Stellar Registry System** untuk deployment sm
 
 - **Space Shooter Mechanics**
   - Player ship movement (WASD/Arrow Keys)
-  - Shooting system dengan fire rate yang bisa disesuaikan
-  - Enemy spawning dengan difficulty scaling
-  - Collision detection dan health system
-  - Score tracking dan coin collection
-  - Power-ups dan special abilities
+  - Shooting system with customizable fire rate
+  - Enemy spawning with difficulty scaling
+  - Collision detection and health system
+  - Score tracking and coin collection
+  - Power-ups and special abilities
 
 - **Game Modes**
-  - **Solo Mode**: Single-player gameplay dengan global leaderboard
-  - **Multiplayer Mode**: Room-based versus matches dengan real-time synchronization
+  - **Solo Mode**: Single-player gameplay with global leaderboard
+  - **Multiplayer Mode**: Room-based versus matches with real-time synchronization
 
 - **Ship System**
   - 6-tier rarity system (Classic, Elite, Epic, Legendary, Master, Ultra)
   - Unique stats per tier (Attack, Speed, Shield)
-  - Dynamic ship attributes yang mempengaruhi gameplay
-  - Visual ship representation dengan GIF animations
+  - Dynamic ship attributes that affect gameplay
+  - Visual ship representation with GIF animations
 
 ### 🎨 NFT Features
 
 - **NFT Minting**
-  - Mint unique ship NFTs langsung dari store
+  - Mint unique ship NFTs directly from the store
   - IPFS-based metadata storage
   - On-chain attribute storage (class, rarity, tier, stats)
   - Sequential token ID assignment
 
 - **Collection Management**
-  - View owned NFTs di collection page
+  - View owned NFTs in the collection page
   - Ship equipping system
   - Profile picture (PFP) NFT support
-  - Transfer dan ownership tracking
+  - Transfer and ownership tracking
 
 ### 🏆 Social Features
 
@@ -100,7 +100,7 @@ Project ini menggunakan **Scaffold Stellar Registry System** untuk deployment sm
   - Room code tracking
 
 - **Profile System**
-  - User profile dengan statistics
+  - User profile with statistics
   - NFT ownership display
   - Achievement tracking
 
@@ -144,25 +144,25 @@ space-stellar/
 
 **Frontend:**
 - React 19.1.1 with TypeScript
-- Vite 7.1.11 untuk build tooling
-- Stellar Wallet Kit untuk wallet integration
-- React Router untuk navigation
-- TanStack Query untuk data fetching
+- Vite 7.1.11 for build tooling
+- Stellar Wallet Kit for wallet integration
+- React Router for navigation
+- TanStack Query for data fetching
 
 **Backend:**
-- Node.js dengan Express
-- PostgreSQL untuk data persistence (optional)
-- Socket.io untuk real-time multiplayer
+- Node.js with Express
+- PostgreSQL for data persistence (optional)
+- Socket.io for real-time multiplayer
 
 **Smart Contracts:**
-- Rust dengan Soroban SDK 23.0.2
+- Rust with Soroban SDK 23.0.2
 - OpenZeppelin Stellar Contracts v0.5.1
-- **Scaffold Stellar Registry** untuk deployment dan management
+- **Scaffold Stellar Registry** for deployment and management
 
 **Blockchain:**
 - Stellar Network (Testnet/Mainnet)
-- Soroban untuk smart contract execution
-- IPFS untuk metadata storage
+- Soroban for smart contract execution
+- IPFS for metadata storage
 
 ---
 
@@ -170,11 +170,11 @@ space-stellar/
 
 ### Prerequisites
 
-- **Node.js** 18+ dan npm
-- **Rust** 1.70+ dan Cargo
-- **PostgreSQL** 14+ (optional, backend bisa run di mock mode)
-- **Stellar CLI** - untuk contract deployment
-- **Scaffold Stellar CLI** - untuk registry management
+- **Node.js** 18+ and npm
+- **Rust** 1.70+ and Cargo
+- **PostgreSQL** 14+ (optional, backend can run in mock mode)
+- **Stellar CLI** - for contract deployment
+- **Scaffold Stellar CLI** - for registry management
 
 ### Step 1: Clone Repository
 
@@ -199,10 +199,10 @@ cd backend && npm install && cd ..
 ### Step 3: Install Rust & Build Tools
 
 ```bash
-# Install Rust toolchain (jika belum terinstall)
+# Install Rust toolchain (if not already installed)
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-# Install wasm32 target untuk contract compilation
+# Install wasm32 target for contract compilation
 rustup target add wasm32-unknown-unknown
 ```
 
@@ -212,15 +212,15 @@ rustup target add wasm32-unknown-unknown
 # Install Scaffold Stellar CLI
 cargo install --locked stellar-scaffold-cli
 
-# Install Registry CLI (untuk registry management)
+# Install Registry CLI (for registry management)
 cargo install --git https://github.com/theahaco/scaffold-stellar stellar-registry-cli
 ```
 
-**Referensi**: [Scaffold Stellar Registry Installation](https://scaffoldstellar.org/docs/registry#prerequisites)
+**Reference**: [Scaffold Stellar Registry Installation](https://scaffoldstellar.org/docs/registry#prerequisites)
 
 ### Step 5: Environment Configuration
 
-Buat file environment:
+Create environment files:
 
 **Frontend (`frontend/.env`):**
 ```env
@@ -240,7 +240,7 @@ STELLAR_NETWORK=testnet
 SOROBAN_RPC_URL=https://soroban-rpc.testnet.stellar.org
 HORIZON_URL=https://horizon-testnet.stellar.org
 
-# Contract IDs (isi setelah deployment)
+# Contract IDs (fill after deployment)
 CONTRACT_ID=your_nft_contract_id
 PFP_CONTRACT_ID=your_pfp_contract_id
 
@@ -250,21 +250,21 @@ DATABASE_URL=postgresql://user:password@localhost:5432/space_stellar
 # JWT Secret
 JWT_SECRET=your_random_jwt_secret_key_here
 
-# IPFS (jika menggunakan Pinata)
+# IPFS (if using Pinata)
 PINATA_API_KEY=your_pinata_api_key
 PINATA_SECRET_KEY=your_pinata_secret_key
 
-# Contract Owner (untuk PFP minting)
+# Contract Owner (for PFP minting)
 PFP_CONTRACT_OWNER_SECRET=your_owner_secret_key_here
 ```
 
 ### Step 6: Build Smart Contracts
 
 ```bash
-# Build semua contracts
+# Build all contracts
 npm run deploy:build
 
-# Atau build secara individual
+# Or build individually
 cd contracts/space_stellar_nft
 cargo build --target wasm32-unknown-unknown --release
 cd ../space_stellar_pfp
@@ -289,38 +289,38 @@ npm run dev
 **Terminal 3 - Scaffold Stellar Watch (Optional):**
 ```bash
 npm run dev
-# Ini akan watch perubahan contract dan rebuild clients
+# This will watch for contract changes and rebuild clients
 ```
 
-Buka browser di `http://localhost:5173`
+Open your browser at `http://localhost:5173`
 
 ---
 
 ## 📝 Smart Contracts
 
-Project ini menggunakan **2 smart contracts** yang di-deploy menggunakan **Scaffold Stellar Registry**:
+This project uses **2 smart contracts** deployed using **Scaffold Stellar Registry**:
 
 ### 🚀 Contract 1: Space Stellar NFT (`space_stellar_nft`)
 
-**Kontrak NFT utama untuk ship tokens dengan custom metadata.**
+**Main NFT contract for ship tokens with custom metadata.**
 
-#### Detail Kontrak
+#### Contract Details
 
 - **Name**: Space Stellar Ships
 - **Symbol**: SSHIP
 - **Standard**: OpenZeppelin NonFungibleToken (ERC-721 compatible)
 - **Features**: Ownable, Sequential Minting, Custom Metadata
-- **Deployment**: Menggunakan Scaffold Stellar Registry
+- **Deployment**: Uses Scaffold Stellar Registry
 
-#### Cara Kerja Kontrak NFT Pesawat
+#### How the NFT Ship Contract Works
 
 1. **Initialization (Constructor)**
    ```rust
    pub fn __constructor(e: &Env, owner: Address)
    ```
-   - Set contract metadata (name, symbol, URI)
-   - Set contract owner
-   - Initialize OpenZeppelin base contract
+   - Sets contract metadata (name, symbol, URI)
+   - Sets contract owner
+   - Initializes OpenZeppelin base contract
 
 2. **Minting Process**
    ```rust
@@ -338,24 +338,24 @@ Project ini menggunakan **2 smart contracts** yang di-deploy menggunakan **Scaff
    ) -> u32                  // Returns token ID
    ```
    
-   **Flow Minting:**
-   1. User memilih tier ship di Store page
-   2. Frontend membuat payment transaction ke Treasury address
-   3. Setelah payment confirmed, frontend memanggil `mint()` function
-   4. Contract menggunakan `Base::sequential_mint()` untuk mint NFT
-   5. Metadata disimpan on-chain (class, rarity, tier, stats, IPFS CID)
-   6. Token ID dikembalikan dan ditampilkan ke user
+   **Minting Flow:**
+   1. User selects ship tier on Store page
+   2. Frontend creates payment transaction to Treasury address
+   3. After payment is confirmed, frontend calls `mint()` function
+   4. Contract uses `Base::sequential_mint()` to mint NFT
+   5. Metadata is stored on-chain (class, rarity, tier, stats, IPFS CID)
+   6. Token ID is returned and displayed to user
 
 3. **Metadata Storage**
-   - Ship attributes disimpan on-chain menggunakan instance storage
-   - IPFS CID untuk off-chain metadata JSON
-   - Full metadata URI untuk external access
+   - Ship attributes stored on-chain using instance storage
+   - IPFS CID for off-chain metadata JSON
+   - Full metadata URI for external access
 
 4. **OpenZeppelin Traits**
    - `NonFungibleToken`: Standard NFT operations (transfer, approve, etc.)
    - `Ownable`: Contract ownership management
 
-#### Fungsi Utama
+#### Main Functions
 
 ```rust
 // Get ship metadata
@@ -368,56 +368,56 @@ pub fn get_metadata_uri(e: &Env, token_id: u32) -> Option<String>
 
 ### 🎨 Contract 2: Space Stellar PFP (`space_stellar_pfp`)
 
-**Kontrak NFT untuk Profile Picture - satu PFP per address.**
+**NFT contract for Profile Picture - one PFP per address.**
 
-#### Detail Kontrak
+#### Contract Details
 
 - **Name**: Space Stellar PFP
 - **Symbol**: SSPFP
 - **Standard**: OpenZeppelin NonFungibleToken
 - **Features**: One-per-address minting, Sequential IDs
-- **Deployment**: Menggunakan Scaffold Stellar Registry
+- **Deployment**: Uses Scaffold Stellar Registry
 
-#### Cara Kerja Kontrak PFP
+#### How the PFP Contract Works
 
 1. **Initialization**
    ```rust
    pub fn __constructor(e: &Env, owner: Address)
    ```
-   - Set contract metadata
-   - Set contract owner
+   - Sets contract metadata
+   - Sets contract owner
 
 2. **Minting Process**
    ```rust
    pub fn mint(e: &Env, to: Address) -> u32
    ```
    
-   **Flow Minting:**
-   1. User memilih PFP di Profile page
-   2. Frontend/Backend memanggil `mint()` function
-   3. Contract mengecek apakah address sudah punya PFP (`balance > 0`)
-   4. Jika belum punya, contract mint PFP menggunakan `Base::sequential_mint()`
-   5. Token ID dikembalikan
+   **Minting Flow:**
+   1. User selects PFP on Profile page
+   2. Frontend/Backend calls `mint()` function
+   3. Contract checks if address already has PFP (`balance > 0`)
+   4. If not, contract mints PFP using `Base::sequential_mint()`
+   5. Token ID is returned
 
 3. **Minting Rules**
-   - Setiap address hanya bisa mint **satu PFP**
-   - Public minting (siapa saja bisa call)
+   - Each address can only mint **one PFP**
+   - Public minting (anyone can call)
    - Sequential token IDs (1, 2, 3, ...)
 
 4. **Check Function**
    ```rust
    pub fn has_pfp(e: &Env, owner: Address) -> bool
    ```
-   - Mengecek apakah address sudah memiliki PFP
-   - Menggunakan `Base::balance()` untuk pengecekan
+   - Checks if address already has PFP
+   - Uses `Base::balance()` for checking
 
 ---
 
-## 🚀 Deployment dengan Scaffold Stellar Registry
+## 🚀 Deployment with Scaffold Stellar Registry
 
-Project ini menggunakan [Scaffold Stellar Registry](https://scaffoldstellar.org/docs/registry) untuk deployment smart contracts. Registry system memudahkan publish, deploy, dan manage contracts.
+This project uses [Scaffold Stellar Registry](https://scaffoldstellar.org/docs/registry) for smart contract deployment. The registry system simplifies publishing, deploying, and managing contracts.
 
-### Prerequisites untuk Deployment
+### Prerequisites for Deployment
 
 1. **Install Registry CLI:**
    ```bash
@@ -431,12 +431,12 @@ Project ini menggunakan [Scaffold Stellar Registry](https://scaffoldstellar.org/
    ```
 
 3. **Fund Account:**
-   - Testnet: Gunakan [Friendbot](https://laboratory.stellar.org/#account-creator)
-   - Mainnet: Transfer XLM ke account
+   - Testnet: Use [Friendbot](https://laboratory.stellar.org/#account-creator)
+   - Mainnet: Transfer XLM to account
 
 ### Registry Contract Addresses
 
-Registry contract sudah di-deploy di setiap network:
+The registry contract is deployed on each network:
 
 - **Testnet**: `CBCOGWBDGBFWR5LQFKRQUPFIG6OLOON35PBKUPB6C542DFZI3OMBOGHX`
 - **Mainnet**: `CC3SILHAJ5O75KMSJ5J6I5HV753OTPWEVMZUYHS4QEM2ZTISQRAOMMF4`
@@ -457,7 +457,7 @@ cargo build --target wasm32-unknown-unknown --release
 cd ../..
 ```
 
-#### 2. Publish Contracts ke Registry
+#### 2. Publish Contracts to Registry
 
 **Publish NFT Contract:**
 ```bash
@@ -477,11 +477,11 @@ stellar registry publish \
   --network testnet
 ```
 
-**Penjelasan:**
-- `--wasm`: Path ke compiled WASM file
-- `--wasm-name`: Nama untuk published contract (akan digunakan untuk deploy)
-- `--binver`: Versi binary (mengikuti semantic versioning)
-- `--network`: Network target (testnet/mainnet)
+**Explanation:**
+- `--wasm`: Path to compiled WASM file
+- `--wasm-name`: Name for published contract (will be used for deployment)
+- `--binver`: Binary version (follows semantic versioning)
+- `--network`: Target network (testnet/mainnet)
 
 #### 3. Deploy Contract Instances
 
@@ -509,50 +509,50 @@ stellar registry deploy \
   --owner YOUR_OWNER_ADDRESS
 ```
 
-**Penjelasan:**
-- `--contract-name`: Nama untuk deployed contract instance
-- `--wasm-name`: Nama published contract yang akan di-deploy
-- `--version`: Versi specific (optional, default: latest)
-- `--`: Separator untuk constructor function dan arguments
+**Explanation:**
+- `--contract-name`: Name for deployed contract instance
+- `--wasm-name`: Name of published contract to deploy
+- `--version`: Specific version (optional, default: latest)
+- `--`: Separator for constructor function and arguments
 - `__constructor`: Constructor function name
-- `--owner`: Owner address untuk contract
+- `--owner`: Owner address for contract
 
 #### 4. Create Aliases (Optional)
 
-Alias memudahkan penggunaan contract dengan nama yang mudah diingat:
+Aliases simplify contract usage with memorable names:
 
 ```bash
-# Create alias untuk NFT contract
+# Create alias for NFT contract
 stellar registry create-alias space-stellar-nft-instance
 
-# Create alias untuk PFP contract
+# Create alias for PFP contract
 stellar registry create-alias space-stellar-pfp-instance
 ```
 
-Setelah create alias, bisa langsung pakai:
+After creating aliases, you can use them directly:
 ```bash
 stellar contract invoke --id space-stellar-nft-instance -- --help
 ```
 
 #### 5. Get Contract IDs
 
-Setelah deploy, dapatkan Contract ID:
+After deployment, get the Contract ID:
 
 ```bash
-# Get Contract ID dari alias
+# Get Contract ID from alias
 stellar keys lookup space-stellar-nft-instance
 
-# Atau dari registry
+# Or from registry
 stellar registry info space-stellar-nft-instance
 ```
 
-Update Contract IDs di environment files:
-- `frontend/.env`: `VITE_CONTRACT_ID` dan `VITE_PFP_CONTRACT_ID`
-- `backend/.env`: `CONTRACT_ID` dan `PFP_CONTRACT_ID`
+Update Contract IDs in environment files:
+- `frontend/.env`: `VITE_CONTRACT_ID` and `VITE_PFP_CONTRACT_ID`
+- `backend/.env`: `CONTRACT_ID` and `PFP_CONTRACT_ID`
 
-### Menggunakan Deployment Scripts
+### Using Deployment Scripts
 
-Project ini menyediakan deployment scripts:
+This project provides deployment scripts:
 
 **PowerShell (Windows):**
 ```powershell
@@ -564,7 +564,7 @@ Project ini menyediakan deployment scripts:
 ./scripts/deploy-scaffold.sh testnet
 ```
 
-### Verifikasi Deployment
+### Verify Deployment
 
 ```bash
 # Check contract metadata
@@ -596,13 +596,13 @@ stellar contract invoke \
 
 ### Best Practices
 
-1. **Semantic Versioning**: Gunakan semantic versioning untuk contract versions
-2. **Test di Testnet**: Selalu test deployment di testnet sebelum mainnet
-3. **Dry Run**: Gunakan `--dry-run` flag untuk simulate operations
-4. **Documentation**: Dokumentasikan initialization parameters untuk setiap deployment
-5. **Environment Variables**: Gunakan environment variables untuk network configurations
+1. **Semantic Versioning**: Use semantic versioning for contract versions
+2. **Test on Testnet**: Always test deployment on testnet before mainnet
+3. **Dry Run**: Use `--dry-run` flag to simulate operations
+4. **Documentation**: Document initialization parameters for each deployment
+5. **Environment Variables**: Use environment variables for network configurations
 
-**Referensi Lengkap**: [Scaffold Stellar Registry Guide](https://scaffoldstellar.org/docs/registry)
+**Full Reference**: [Scaffold Stellar Registry Guide](https://scaffoldstellar.org/docs/registry)
 
 ---
 
@@ -621,11 +621,11 @@ stellar contract invoke \
 
 ### Game Stats Impact
 
-Ship stats mempengaruhi gameplay:
+Ship stats affect gameplay:
 
 - **Speed**: Movement velocity (pixels per frame)
 - **Fire Rate**: Bullet firing interval (milliseconds)
-- **Health**: Hit points sebelum game over
+- **Health**: Hit points before game over
 
 **Rarity-based Stats:**
 - Classic: Speed 5, Fire Rate 300ms, Health 3
@@ -637,7 +637,7 @@ Ship stats mempengaruhi gameplay:
 
 ### Controls
 
-- **Movement**: `WASD` atau `Arrow Keys`
+- **Movement**: `WASD` or `Arrow Keys`
 - **Shoot**: `Space`
 - **Pause**: `P`
 
@@ -645,7 +645,7 @@ Ship stats mempengaruhi gameplay:
 
 - Enemy destroyed: +10 points
 - Coin collected: +5 points
-- Difficulty scaling: Enemy speed increases dengan score
+- Difficulty scaling: Enemy speed increases with score
 
 ---
 
@@ -801,10 +801,10 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## 🙏 Acknowledgments
 
-- **Stellar Development Foundation** untuk blockchain platform yang luar biasa
-- **OpenZeppelin** untuk Stellar smart contract standards
-- **Scaffold Stellar** team untuk development framework dan registry system
-- All contributors dan community members
+- **Stellar Development Foundation** for the amazing blockchain platform
+- **OpenZeppelin** for Stellar smart contract standards
+- **Scaffold Stellar** team for the development framework and registry system
+- All contributors and community members
 
 ---
 
